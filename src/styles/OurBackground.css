@@ -11,15 +11,17 @@
 }
 
 .back-hero-overlay {
-  background: rgba(167, 53, 128, 0.6);
-  width: 100%;
-  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 10px;
 }
 
 .back-hero-overlay h1 {

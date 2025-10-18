@@ -13,22 +13,29 @@
 }
 
 .hero-overlay {
-  background: rgba(167, 53, 128, 0.6); /* purple overlay matching --primary */
-  padding: 4rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #fff;
-  width: 100%;
-  border-radius: 10px;
 }
 
 .hero-overlay h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
+  color: #fff;
 }
 
 .hero-overlay p {
   font-size: 1.2rem;
+  color: #fff;
 }
 
 /* Mission & Vision Section */
