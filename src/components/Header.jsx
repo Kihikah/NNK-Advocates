@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";  // ✅ import Link
 import "../styles/Header.css";
 
 const Header = () => {
@@ -8,7 +9,6 @@ const Header = () => {
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
-    // Close the about dropdown when menu is closed
     if (menuOpen) setAboutDropdownOpen(false);
   };
 
@@ -30,7 +30,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src="/NNK Logo.png" alt="NNK Advocates Logo" />
+        <Link to="/">
+          <img src="/NNK Logo.png" alt="NNK Advocates Logo" />
+        </Link>
       </div>
 
       {/* Hamburger Icon */}
@@ -42,9 +44,12 @@ const Header = () => {
 
       <nav className={`nav ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li><a href="#home">Home</a></li>
+          {/* ✅ HOME */}
+          <li>
+            <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          </li>
 
-          {/* About Us Dropdown */}
+          {/* ✅ About Us Dropdown */}
           <li
             className={`dropdown ${aboutDropdownOpen ? "open" : ""}`}
             ref={dropdownRef}
@@ -53,15 +58,34 @@ const Header = () => {
               About Us
             </span>
             <ul className={`dropdown-menu ${aboutDropdownOpen ? "show" : ""}`}>
-              <li><a href="/about/why-work-with-us">Why Work With Us</a></li>
-              <li><a href="/about/background">Our Background</a></li>
-              <li><a href="/about/business-policies">Business Policies</a></li>
+              <li>
+                <Link to="/about/why-work-with-us" onClick={() => setMenuOpen(false)}>
+                  Why Work With Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/about/background" onClick={() => setMenuOpen(false)}>
+                  Our Background
+                </Link>
+              </li>
+              <li>
+                <Link to="/about/business-policies" onClick={() => setMenuOpen(false)}>
+                  Business Policies
+                </Link>
+              </li>
             </ul>
           </li>
 
-          <li><a href="#practice">Our Practice Areas</a></li>
-          <li><a href="#team">Our Team</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          {/* ✅ Scrollable Section Links (optional later for smooth scroll) */}
+          <li>
+            <a href="#practice">Our Practice Areas</a>
+          </li>
+          <li>
+            <a href="#team">Our Team</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
         </ul>
       </nav>
     </header>
