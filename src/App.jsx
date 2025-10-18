@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 // Pages
 import OurBackground from "./pages/OurBackground";
 import WhyWorkWithUs from "./pages/WhyWorkWithUs";
-// import BusinessPolicies from "./pages/BusinessPolicies";
+import BusinessPolicies from "./pages/BusinessPolicies";
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
             {/* About pages */}
             <Route path="/about/background" element={<OurBackground />} />
             <Route path="/about/why-work-with-us" element={<WhyWorkWithUs />} />
-            {/* <Route path="/about/business-policies" element={<BusinessPolicies />} /> */}
+            <Route path="/about/business-policies" element={<BusinessPolicies />} />
           </Routes>
         </main>
         <Footer />
