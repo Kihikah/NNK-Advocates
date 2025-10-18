@@ -33,7 +33,7 @@ const Footer = () => {
                 <h3>Contact Info</h3>
                 <p>📞 +254 722 348 064</p>
                 <p>✉️ info@nnklaw.co.ke</p>
-                <p>🏢 Nairobi, Kenya</p>
+                <p>🏢 Nakuru, Kenya</p>
             </div>
             {/* Social Media */}
             <div className="footer-section">
