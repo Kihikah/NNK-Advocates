@@ -1,0 +1,103 @@
+/* ============================
+   Hero Section
+============================ */
+.background-hero {
+  background: url("../assets/Flamingos.jpeg") center/cover no-repeat;
+  height: 83vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-hero-overlay {
+  background: rgba(167, 53, 128, 0.6);
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.back-hero-overlay h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.underline {
+  width: 80px;
+  height: 3px;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+/* ============================
+   History Section
+============================ */
+.history-section {
+  background: #f7f9fc;
+  padding: 4rem 2rem;
+}
+
+.history-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.history-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.history-item:hover {
+  transform: translateY(-5px);
+}
+
+.history-icon {
+  font-size: 2rem;
+  color: #1e3c72;
+  flex-shrink: 0;
+}
+
+.history-item p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.history-item strong {
+  color: #1e3c72;
+}
+
+/* ============================
+   Responsive
+============================ */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .history-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .history-icon {
+    margin-bottom: 0.5rem;
+  }
+}

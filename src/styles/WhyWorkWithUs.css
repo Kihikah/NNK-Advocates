@@ -1,0 +1,139 @@
+/* ============================
+   Why Work With Us Page Styles
+============================ */
+
+/* Hero Section */
+.why-hero {
+  background: url("../assets/5.jpeg") center/cover no-repeat; /* replace with your image */
+  height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(167, 53, 128, 0.6); /* purple overlay matching --primary */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.mission-card,
+.vision-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 500px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.mission-card h2,
+.vision-card h2 {
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.mission-card p,
+.vision-card p {
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Core Values Section */
+.core-values {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--background);
+}
+
+.core-values h2 {
+  font-size: 2rem;
+  color: #1e3c72;
+  font-weight: 600;
+}
+
+.underline {
+  width: 80px;
+  height: 3px;
+  background: var(--accent);
+  margin: 0.5rem auto 2rem auto;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value-item {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.value-icon {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+}
+
+.value-item h3 {
+  color: #1e3c72;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.value-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value-item {
+    text-align: center;
+  }
+}
