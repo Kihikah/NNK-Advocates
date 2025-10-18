@@ -45,6 +45,16 @@ a, button {
   transition: all 0.3s ease;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; /* This pushes the footer down */
+}
+
 /* ============================
    Section Defaults
 ============================ */
