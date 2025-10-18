@@ -1,10 +1,17 @@
 import React from 'react'
 import "../styles/Footer.css"
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaArrowUp } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaArrowUp, FaWhatsapp } from 'react-icons/fa';
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+
+const whatsappNumber = "+254722348064";
+const whatsappMessage = "Hello! I’d like to get assistance 👋";
+
+const openWhatsApp = () => {
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`, "_blank");
+  };
 
 const Footer = () => {
   return (
@@ -41,9 +48,14 @@ const Footer = () => {
         </div>
 
         {/* Back to Top Button */}
-      <div className="back-to-top" onClick={scrollToTop} title="Back to top">
-        <FaArrowUp />
-      </div>
+        <div className="back-to-top" onClick={scrollToTop} title="Back to top">
+            <FaArrowUp />
+        </div>
+
+        {/* WhatsApp Floating Button */}
+        <div className="whatsapp-button" onClick={openWhatsApp} title="Chat with us on WhatsApp">
+            <FaWhatsapp />
+        </div>
 
         <div className="footer-bottom">
             <p>&copy; {new Date().getFullYear()} NNK Law Firm. All rights reserved.</p>
