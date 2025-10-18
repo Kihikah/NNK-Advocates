@@ -31,7 +31,7 @@ Nancy began her legal practice in 1991 with the Judiciary where she rose to the 
     phone: "+254 711 788 882",
     email: "kairu@nnklaw.co.ke",
     image: KairukiImg,
-    bio: `Kairuki has been a Partner in the Firm since August 2011.
+    bio: `Kairu has been a Partner in the Firm since August 2011.
 He was admitted to the Roll of Advocates on 26th August 2011.
 He holds a Bachelor of Laws degree from Catholic University of Eastern Africa and a Post Graduate Diploma from the Kenya School of Law.`,
     areas: [
