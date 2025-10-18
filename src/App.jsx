@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Team from "./components/Team";
 import Stats from "./components/StatsSection";
 import PartnersSection from "./components/PartnersSection";
+import Footer from "./components/Footer";
 //import BusinessProcesses from "./components/BusinessProcesses";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Team />
       <Stats />
       <PartnersSection />
+      <Footer />
       {/* <BusinessProcesses /> */}
     </>
   );
