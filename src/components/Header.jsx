@@ -85,9 +85,6 @@ const Header = () => {
 
           {/* ✅ Scrollable Section Links (optional later for smooth scroll) */}
           <li>
-            <a href="#team">Our Team</a>
-          </li>
-          <li>
             <a href="#contact">Contact Us</a>
           </li>
         </ul>
