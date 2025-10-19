@@ -14,28 +14,27 @@
 
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: rgba(0, 0, 0, 0.45);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .hero-overlay h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 600;
   color: #fff;
   margin-bottom: 0.5rem;
 }
 
 .hero-overlay p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #fff;
+  max-width: 600px;
 }
 
 /* Intro Section */
@@ -94,7 +93,7 @@
 
 .practice-card h3 {
   color: #555;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -102,11 +101,12 @@
 .practice-card button {
   background: #1e3c72;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-size: 0.95rem;
 }
 
 .practice-card button:hover {
@@ -120,6 +120,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .page-btn {
@@ -141,10 +142,41 @@
   cursor: not-allowed;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* ============================
+   Responsive Adjustments
+============================ */
+
+/* Large tablets and small laptops */
+@media (max-width: 992px) {
   .hero-overlay h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.1rem;
+  }
+
+  .practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  .practice-card h3 {
+    font-size: 1.15rem;
+  }
+}
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+  .practice-hero {
+    height: 60vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.9rem;
   }
 
   .hero-overlay p {
@@ -155,11 +187,40 @@
     font-size: 1rem;
   }
 
+  .practice-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .practice-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .practice-card button {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero-overlay h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.95rem;
+  }
+
   .practice-card h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .icon {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+
+  .practice-card button {
+    width: 100%;
+    padding: 0.6rem;
   }
 }
