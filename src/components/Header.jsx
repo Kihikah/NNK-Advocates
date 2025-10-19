@@ -51,35 +51,39 @@ const Header = () => {
 
           {/* ✅ About Us Dropdown */}
           <li
-            className={`dropdown ${aboutDropdownOpen ? "open" : ""}`}
-            ref={dropdownRef}
-          >
-            <span className="dropdown-toggle" onClick={toggleAboutDropdown}>
-              About Us
-            </span>
-            <ul className={`dropdown-menu ${aboutDropdownOpen ? "show" : ""}`}>
-              <li>
-                <Link to="/about/why-work-with-us" onClick={() => setMenuOpen(false)}>
-                  Why Work With Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/about/background" onClick={() => setMenuOpen(false)}>
-                  Our Background
-                </Link>
-              </li>
-              <li>
-                <Link to="/about/business-policies" onClick={() => setMenuOpen(false)}>
-                  Business Policies
-                </Link>
-              </li>
-            </ul>
+              className={`dropdown ${aboutDropdownOpen ? "open" : ""}`}
+              ref={dropdownRef}
+            >
+              <span className="dropdown-toggle" onClick={toggleAboutDropdown}>
+                About Us
+              </span>
+              <ul className={`dropdown-menu ${aboutDropdownOpen ? "show" : ""}`}>
+                <li>
+                  <Link to="/about/why-work-with-us" onClick={() => setMenuOpen(false)}>
+                    Why Work With Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about/background" onClick={() => setMenuOpen(false)}>
+                    Our Background
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about/business-policies" onClick={() => setMenuOpen(false)}>
+                    Business Policies
+                  </Link>
+                </li>
+                
+
+              </ul>
+            </li>
+          <li>
+            <Link to="/practice-areas" onClick={() => setMenuOpen(false)}>
+              Our Practice Areas
+            </Link>
           </li>
 
           {/* ✅ Scrollable Section Links (optional later for smooth scroll) */}
-          <li>
-            <a href="#practice">Our Practice Areas</a>
-          </li>
           <li>
             <a href="#team">Our Team</a>
           </li>
