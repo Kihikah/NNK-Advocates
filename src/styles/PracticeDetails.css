@@ -1,0 +1,73 @@
+.practice-details .practice-hero {
+  height: 83vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.practice-details .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.practice-details .overlay h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.practice-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.practice-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.practice-content h3 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #1e3c72;
+}
+
+.practice-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.practice-content li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background: #1e3c72;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background: #274d91;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .practice-details .overlay h1 {
+    font-size: 1.8rem;
+  }
+}
