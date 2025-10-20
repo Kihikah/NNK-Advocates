@@ -4,7 +4,7 @@
 
 /* Hero Section */
 .practice-hero {
-  background: url("../assets/5.jpeg") center/cover no-repeat;
+  background: url("../assets/Practices.jpg") center/cover no-repeat;
   height: 83vh;
   display: flex;
   align-items: center;
@@ -152,6 +152,10 @@
     font-size: 2.2rem;
   }
 
+  .practice-hero {
+    height: 83vh;
+  }
+
   .hero-overlay p {
     font-size: 1.1rem;
   }
@@ -172,7 +176,7 @@
 /* Tablets and large phones */
 @media (max-width: 768px) {
   .practice-hero {
-    height: 60vh;
+    height: 83vh;
   }
 
   .hero-overlay h1 {
@@ -205,6 +209,10 @@
 @media (max-width: 480px) {
   .hero-overlay h1 {
     font-size: 1.6rem;
+  }
+
+  .practice-hero {
+    height: 83vh;
   }
 
   .hero-overlay p {
