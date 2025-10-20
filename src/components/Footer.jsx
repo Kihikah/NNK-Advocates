@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/Footer.css"
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaArrowUp, FaWhatsapp } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -21,10 +22,16 @@ const Footer = () => {
             <div className="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#practice">Practice Areas</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <Link to="/practice-areas">Our Practice Areas</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">Contact Us</Link>
+                    </li>
                 </ul>
             </div>
             {/* Contact Info */}
