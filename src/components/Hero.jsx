@@ -23,8 +23,8 @@ const Hero = () => {
         <div className="hero-content">
             <h1 className="hero-slogan">{slogans[current]}</h1>
             <div className="hero-buttons">
-                <a href="#about" className="btn primary">Learn More</a>
-                <a href="#contact" className="btn secondary">Get Legal Help</a>
+                <a href="/practice-areas" className="btn primary">Learn More</a>
+                <a href="/contact" className="btn secondary">Get Legal Help</a>
             </div>
         </div>
     </section>
