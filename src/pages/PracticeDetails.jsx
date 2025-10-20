@@ -27,7 +27,7 @@ const PracticeDetails = () => {
       <div className="practice-content">
         <p>{practice.description}</p>
 
-        <h3>Our Services</h3>
+        <h3>Why Choose NNK Advocates</h3>
         <ul>
           {practice.services.map((service, index) => (
             <li key={index}>{service}</li>
