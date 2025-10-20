@@ -82,11 +82,13 @@ const Header = () => {
               Our Practice Areas
             </Link>
           </li>
+          <li>
+            <Link to="/contact" onClick={() => setMenuOpen(false)}>
+              Contact Us
+            </Link>
+          </li>
 
           {/* ✅ Scrollable Section Links (optional later for smooth scroll) */}
-          <li>
-            <a href="#contact">Contact Us</a>
-          </li>
         </ul>
       </nav>
     </header>

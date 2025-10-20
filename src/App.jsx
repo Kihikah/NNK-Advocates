@@ -13,6 +13,7 @@ import WhyWorkWithUs from "./pages/WhyWorkWithUs";
 import BusinessPolicies from "./pages/BusinessPolicies";
 import PracticeAreas from "./pages/PracticeAreas";
 import PracticeDetails from "./pages/PracticeDetails";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route path="/about/business-policies" element={<BusinessPolicies />} />
             <Route path="/practice-areas" element={<PracticeAreas />} />
             <Route path="/practice/:slug" element={<PracticeDetails />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
