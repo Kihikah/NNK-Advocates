@@ -62,7 +62,7 @@ const Contact = () => {
               <FaMapMarkerAlt className="info-icon" />
               <div>
                 <h4>Location</h4>
-                <p>Nairobi, Kenya</p>
+                <p>Nakuru, Kenya</p>
               </div>
             </div>
           </div>
