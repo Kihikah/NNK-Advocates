@@ -2,7 +2,7 @@
    Hero Section
 ============================ */
 .background-hero {
-  background: url("../assets/Flamingos.jpeg") center/cover no-repeat;
+  background: url("../assets/Background.jpg") center/cover no-repeat;
   height: 83vh;
   position: relative;
   display: flex;
